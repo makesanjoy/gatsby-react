@@ -8,9 +8,10 @@ import Seo from "../components/seo"
 import HeroSection from "../components/reusable/HeroSection";
 import Infoblock from "../components/reusable/infoblock";
 import Dualinfoblock from "../components/reusable/dualinfoblock";
+import TeamService from "../components/services/teamservices";
 
 
-const IndexPage = ({data}) => (
+const ServicePage = ({data}) => (
   <Layout>
    <Seo title="Home" />
    <HeroSection
@@ -23,6 +24,7 @@ heroclass="hero-background"
    />
     <Infoblock heading="About Us" />
     <Dualinfoblock heading="Our Team"/>
+    <TeamService/>
   </Layout>
 )
 
@@ -38,4 +40,4 @@ export const query = graphql`
 }
 `
 
-export default IndexPage
+export default ServicePage
